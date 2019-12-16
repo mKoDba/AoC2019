@@ -63,7 +63,6 @@ static bool prepare_file(std::vector<int>& arr){
 }
 
 static int opcode_calculator(std::vector<int> arr){
-	int res = 0;
 
 	for(unsigned i=0; i<arr.size()-5; i+=4){
 		switch(arr[i]){
@@ -81,6 +80,5 @@ static int opcode_calculator(std::vector<int> arr){
 			break;
 		}
 	}
-	res = arr[0];
-	return res;
+	return arr[0];
 }
