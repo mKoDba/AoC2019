@@ -31,9 +31,10 @@ int main(void){
 	int second = 0;
 	first = number_of_passwords(min, max, second);
 
+    std::cout<<"\nduration: "<<float( clock () - start ) * 1000.0 /  CLOCKS_PER_SEC <<" ms"<<std::endl;
 	std::cout<<"Number of different passwords that meet criteria: "<<first<<std::endl;
 	std::cout<<"Number of different passwords that meet all criterias: "<<second<<std::endl;
-    std::cout<<"\nduration: "<<float( clock () - start ) * 1000.0 /  CLOCKS_PER_SEC <<" ms"<<std::endl;
+
 	return EXIT_SUCCESS;
 
 }

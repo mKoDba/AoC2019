@@ -34,9 +34,10 @@ int main(void){
 	}
 	int manh_dist = find_intersection(wire_1, wire_2, fewest);
 
+    std::cout<<"\nduration: "<<float( clock () - start ) * 1000.0 /  CLOCKS_PER_SEC <<" ms"<<std::endl;
 	std::cout<<"Manhattan distance from central port to closest intersection is: "<<manh_dist<<std::endl;
 	std::cout<<"Fewest combined steps the wires must take to reach an intersection: "<<fewest<<std::endl;
-    std::cout<<"\nduration: "<<float( clock () - start ) * 1000.0 /  CLOCKS_PER_SEC <<" ms"<<std::endl;
+
 	return EXIT_SUCCESS;
 }
 
