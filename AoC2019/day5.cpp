@@ -12,7 +12,7 @@
 #include <fstream>
 #include <ctime>
 
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day5.txt"
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day5.txt";
 
 static bool prepare_file(std::vector<int>& input);
 

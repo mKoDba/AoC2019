@@ -14,9 +14,7 @@
 #include <ctime>
 #include <map>
 
-
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day3.txt"
-
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day3.txt";
 
 static bool prepare_file(std::vector<int>& arr, std::vector<std::pair<char, int>>& wire_1, std::vector<std::pair<char, int>>& wire_2);
 static int find_intersection(std::vector<std::pair<char, int>>& wire_1, std::vector<std::pair<char, int>>& wire_2, int& fewest);

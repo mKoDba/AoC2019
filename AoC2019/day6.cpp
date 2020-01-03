@@ -14,8 +14,7 @@
 #include <algorithm>
 #include <ctime>
 
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day6.txt"
-
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day6.txt";
 
 static bool prepare_file(std::map<std::string,std::string>& input);
 static void count_orbits(std::map<std::string, std::string>& input);

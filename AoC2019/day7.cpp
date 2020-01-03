@@ -13,7 +13,7 @@
 #include <fstream>
 #include <algorithm>
 
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day7.txt"
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day7.txt";
 
 static bool parse_file(std::vector<int>& input);
 static void part_one(std::vector<int> in_codes);

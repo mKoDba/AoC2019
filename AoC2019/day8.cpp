@@ -11,9 +11,9 @@
 #include <fstream>
 #include <string>
 
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day8.txt"
-#define WIDTH 25
-#define HEIGHT 6
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day8.txt";
+constexpr int WIDTH = 25;
+constexpr int HEIGHT = 6;
 
 static bool parse_file(std::string& input);
 static int part_one(std::string& digits);

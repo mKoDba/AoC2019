@@ -11,7 +11,7 @@
 #include <cmath>
 
 //using namespace std;
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day1.txt"
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day1.txt";
 
 int main(void){
 
@@ -25,7 +25,7 @@ int main(void){
 		while(std::getline(inFile, input)){
 			mass = stod(input);
 			while(mass > 0){
-				mass = (floor(mass/3))-2;
+				mass = std::floor(mass/3)-2;
 				if(mass > 0){
 					fuel_sum += mass;
 				}

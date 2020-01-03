@@ -10,8 +10,8 @@
 #include <fstream>
 #include <string>
 
-#define FILE_LOCATION "C:\\Users\\Mario\\Desktop\\aoc2019\\day2.txt"
-#define OUTPUT_VALUE 19690720
+constexpr char const* FILE_LOCATION = "C:\\Users\\Mario\\Desktop\\aoc2019\\day2.txt";
+constexpr int OUTPUT_VALUE = 19690720;
 
 static bool prepare_file(std::vector<int>& input);
 static int opcode_calculator(std::vector<int> arr);
